@@ -1,0 +1,47 @@
+<!doctype html>
+<!--
+  LIMINAL's share link: https://alphachad5000.github.io/play-liminal/ (repo AlphaChad5000/play-liminal, GitHub
+  Pages from main). It exists for its preview card. X keys a link card on the page's og:url, and the Steam store
+  page names one canonical address however the link is dressed (?utm_source=, s.team/a/), so a card X cached
+  before the 2026-10-25 cover keeps the old art for every Steam link. This page has its own address, so its own
+  card: card.jpg, the hero cover's 1920x1080 word plate cut to X's 1.91:1 (the floor trimmed, the word kept).
+  Visitors go straight on to the store page; ?s=<site> names the source in Steamworks' UTM report (default card).
+  No canonical link to Steam: a crawler that follows it would fetch Steam's stale card again.
+  Source of truth is marketing/link-page/ in the game repo; copy both files to the Pages repo to change it.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LIMINAL on Steam</title>
+<meta name="description" content="A third-person action roguelike where every gift you take grows on your body. Free demo on Steam.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="LIMINAL">
+<meta property="og:title" content="LIMINAL on Steam">
+<meta property="og:description" content="A third-person action roguelike where every gift you take grows on your body. Free demo on Steam.">
+<meta property="og:url" content="https://alphachad5000.github.io/play-liminal/">
+<meta property="og:image" content="https://alphachad5000.github.io/play-liminal/card.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="628">
+<meta property="og:image:alt" content="A skinless body grown over with tentacles, bone launchers and swords, fighting in a ring of fire under the word LIMINAL.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="LIMINAL on Steam">
+<meta name="twitter:description" content="A third-person action roguelike where every gift you take grows on your body. Free demo on Steam.">
+<meta name="twitter:image" content="https://alphachad5000.github.io/play-liminal/card.jpg">
+<meta name="twitter:image:alt" content="A skinless body grown over with tentacles, bone launchers and swords, fighting in a ring of fire under the word LIMINAL.">
+<meta http-equiv="refresh" content="0; url=https://store.steampowered.com/app/4802890/LIMINAL/?utm_source=card&amp;utm_medium=link">
+<script>
+  const source = (new URLSearchParams(location.search).get('s') || 'card').replace(/[^\w-]/g, '').slice(0, 32) || 'card';
+  location.replace(`https://store.steampowered.com/app/4802890/LIMINAL/?utm_source=${source}&utm_medium=link`);
+</script>
+<style>
+  :root { color-scheme: dark; }
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #0d0f12; color: #c8c2b0;
+    font: 16px/1.5 Bahnschrift, "Segoe UI", system-ui, sans-serif; letter-spacing: .08em; }
+  a { color: #ece6d6; }
+</style>
+</head>
+<body>
+  <a href="https://store.steampowered.com/app/4802890/LIMINAL/?utm_source=card&amp;utm_medium=link">LIMINAL on Steam</a>
+</body>
+</html>
